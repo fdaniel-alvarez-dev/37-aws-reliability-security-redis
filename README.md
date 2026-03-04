@@ -1,6 +1,9 @@
-# 37-aws-reliability-security
+# 37-aws-reliability-security-redis
 
 A production-minded Database Reliability Engineering toolkit: HA lab, backup/PITR drills, and zero-downtime migration playbooks.
+
+Focus: redis
+
 
 ## Why this repo exists
 This is a portfolio-grade, runnable toolkit that demonstrates how I approach database reliability work:
