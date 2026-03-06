@@ -12,7 +12,7 @@ Thumbs.db
 *.p12
 *credentials*
 
-# Internal agent guidance (must never be committed)
+# Internal maintenance notes (must never be committed)
 AGENTS.md
 **/AGENTS.md
 AGENTS*.md

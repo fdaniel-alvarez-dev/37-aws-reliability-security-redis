@@ -5,9 +5,9 @@ This document turns reliability goals into measurable targets.
 ## Service context
 - What are we protecting? A customer-visible API / data pipeline / database.
 - Top pains this repo targets:
-  1) Replacing manual, risky changes with automated delivery—repeatable infrastructure, safe deployments, and drift-free environments (IaC + CI/CD + GitOps).
-  2) Building a data platform people trust—reliable pipelines, clear ownership, data quality checks, and governance that scales without slowing delivery.
-  3) Making databases boring again—high availability, predictable performance, safe backups, and zero/low-downtime migrations with solid tooling and runbooks.
+  1) Making stateful services boring again—predictable performance, safe backups, and repeatable recovery drills.
+  2) Replacing manual, risky changes with automation—repeatable workflows and safer operational runbooks.
+  3) Enforcing security and governance without slowing delivery—explicit guardrails and production-safe validation paths.
 
 ## Suggested SLIs (examples)
 - Availability: successful requests / total requests
