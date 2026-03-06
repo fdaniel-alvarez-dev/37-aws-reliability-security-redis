@@ -45,8 +45,10 @@ def check_no_company_branding(findings: list[Finding]) -> None:
     if not readme.exists():
         return
     text = read_text(readme)
-    if re.search(r"(?i)storable", text):
-        add(findings, "ERROR", "docs.branding", "README contains company branding; keep it generic.", readme)
+    # Avoid leaking company/role/job-posting identifiers into repo-facing docs.
+    # Keep this check generic: no company names hard-coded here.
+    if re.search(r"(?i)job-boards\\.greenhouse\\.io|\\bgh_jid\\b", text):
+        add(findings, "ERROR", "docs.branding", "README contains job-posting identifiers; keep it generic.", readme)
 
 
 def check_demo_tests_workflow(findings: list[Finding]) -> None:
